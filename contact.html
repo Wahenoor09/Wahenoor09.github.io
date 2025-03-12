@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - Wahenoor's Portfolio</title>
+    <title>Contact - Wahenoor's Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <style>
-        /* Internal CSS for About Page */
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
@@ -41,9 +39,15 @@
             margin: 20px;
             background-color: white;
             border-radius: 8px;
+            width: 80%;
+            margin: 20px auto;
         }
-        .hobbies, .education, .interests {
-            margin-bottom: 20px;
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
         }
         button {
             padding: 10px 20px;
@@ -55,11 +59,17 @@
         button:hover {
             background-color: #555;
         }
+        .submit-btn {
+            background-color: #2172cf;
+        }
+        .submit-btn:hover {
+            background-color: #1a5c9e;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>About Me</h1>
+        <h1>Contact Me</h1>
     </header>
     
     <nav>
@@ -71,18 +81,25 @@
     </nav>
 
     <section>
-        <h2>Hobbies</h2>
-        <p>I love traveling and exploring new places. Traveling helps me learn about different cultures and meet new people.</p>
+        <h2>Get in Touch</h2>
+        <p>If you'd like to contact me, please fill out the form below:</p>
         
-        <h2>Education</h2>
-        <p>I am currently in high school, working toward my goal of becoming a CBSA officer. I will be taking courses like Geography,Law Studies,Politcal Studies,Chemistry to prepare for my future career .</p>
-        
-        <h2>Interests</h2>
-        <p>Aside from my studies, I am passionate about border security and law enforcement. I also enjoy playing basketball and learning about different global issues.</p>
-        
+        <form id="contactForm">
+            <label for="name">Your Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="email">Your Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="message">Your Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+            
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+
+        <br><br>
         <button onclick="changeBackground()">Change Background</button>
     </section>
+
 </body>
 </html>
-
-

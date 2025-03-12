@@ -1,10 +1,77 @@
 <!DOCTYPE html>
-<html>
- <head> 
-   <title> This is my homepage </title>
- </head>
- <body>
-   <h1> This is my home page </h1>
-   <p> To go to other page <a href="about.html">about</a> </p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wahenoor's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <style>
+        /* Internal CSS for Home Page */
+        body {
+            font-family: Georgia,'Times New Roman';
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #2172cf;
+            color: rgb(237, 226, 226);
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #2172cf;
+        }
+        nav ul li {
+            margin: 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .bio {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .bio img {
+            border-radius: 50%;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="bio">
+        <h2>Hi, I'm Wahenoor</h2>
+        <p>I love traveling and exploring new places. Traveling helps me learn about different cultures and meet new people. I am passionate about border security and law enforcement.</p>
+        <img src="traveling.jpg" alt="Wahenoor's Photo" width="200">
+        <br><br>
+        <button onclick="changeBackground()">Change Background</button>
+    </section>
+
 </body>
 </html>
